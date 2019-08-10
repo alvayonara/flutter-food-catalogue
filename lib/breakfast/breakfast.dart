@@ -13,50 +13,58 @@ class Breakfast extends StatelessWidget {
 
     List<Card> card = List.generate(
         count,
-        (int index) => Card(
-            clipBehavior: Clip.antiAlias,
-            child: Hero(
-                tag: breakfastList[index].name,
-                child: Material(
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => DetailScreen(
-                            name: breakfastList[index].name,
-                            image: breakfastList[index].image,
-                            ingredient: breakfastList[index].ingredient,
-                          ),
-                        ),
-                      );
-                    },
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        AspectRatio(
-                          aspectRatio: 18.0 / 14.0,
-                          child: Image.asset(
-                            'assets/images/' + breakfastList[index].image,
-                            fit: BoxFit.fitWidth,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 1.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                breakfastList[index].name,
+            (int index) =>
+            Card(
+                clipBehavior: Clip.antiAlias,
+                child: Hero(
+                    tag: breakfastList[index].name,
+                    child: Material(
+                      child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    DetailScreen(
+                                      name: breakfastList[index].name,
+                                      image: breakfastList[index].image,
+                                      ingredient: breakfastList[index]
+                                          .ingredient,
+                                    ),
                               ),
-                              SizedBox(height: 8.0),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ))));
+                            );
+                          },
+                          child: SingleChildScrollView(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  AspectRatio(
+                                    aspectRatio: 18.0 / 14.0,
+                                    child: Image.asset(
+                                      'assets/images/breakfast/' +
+                                          breakfastList[index].image,
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.fromLTRB(
+                                        16.0, 12.0, 16.0, 1.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment
+                                          .start,
+                                      children: <Widget>[
+                                        Text(
+                                          breakfastList[index].name,
+                                        ),
+                                        SizedBox(height: 8.0),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                          )
+                      ),
+                    ))));
     return card;
   }
 

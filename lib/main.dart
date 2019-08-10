@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'breakfast/breakfast.dart';
+import 'desert/desert.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Main(),
+    return new MaterialApp(
+      home: new Main(),
     );
   }
 }
@@ -24,7 +25,7 @@ class _MainState extends State<Main> {
   int _indexSelected = 0;
   final _widgetOptions = [
     Breakfast(),
-    Text('Index 1: Dessert'),
+    Desert(),
   ];
 
   @override

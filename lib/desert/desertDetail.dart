@@ -8,7 +8,7 @@ class DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imageBreakfast = Hero(
+    final imageDesert = Hero(
         tag: name,
         child: Material(
           child: InkWell(
@@ -17,13 +17,13 @@ class DetailScreen extends StatelessWidget {
               child: CircleAvatar(
                 radius: 72.0,
                 backgroundColor: Colors.transparent,
-                backgroundImage: AssetImage('assets/images/breakfast/' + image),
+                backgroundImage: AssetImage('assets/images/desert/' + image),
               ),
             ),
           ),
         ));
 
-    final nameBreakfast = Padding(
+    final nameDesert = Padding(
       padding: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 36.0),
       child: Text(
         name,
@@ -35,7 +35,7 @@ class DetailScreen extends StatelessWidget {
       color: Colors.black12,
     );
 
-    final ingredientBreakfastText = Padding(
+    final ingredientDesertText = Padding(
       padding: EdgeInsets.fromLTRB(8.0, 10.0, 8.0, 2.0),
       child: Text(
         'Ingredients',
@@ -44,7 +44,7 @@ class DetailScreen extends StatelessWidget {
       ),
     );
 
-    final ingredientBreakfast = Padding(
+    final ingredientDesert = Padding(
         padding: EdgeInsets.all(24.0),
         child: Text(
           ingredient,
@@ -57,11 +57,11 @@ class DetailScreen extends StatelessWidget {
         padding: EdgeInsets.all(28.0),
         child: Column(
           children: <Widget>[
-            imageBreakfast,
-            nameBreakfast,
+            imageDesert,
+            nameDesert,
             divider,
-            ingredientBreakfastText,
-            ingredientBreakfast,
+            ingredientDesertText,
+            ingredientDesert,
           ],
         ),
       ),
@@ -69,7 +69,7 @@ class DetailScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-          title: Text('Breakfast Details'),
+          title: Text('Desert Details'),
           backgroundColor: Colors.cyan,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
