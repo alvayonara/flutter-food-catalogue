@@ -1,4 +1,4 @@
-import 'package:flutter_submission_alvayonara/model/breakfastModel.dart';
+import 'package:flutter_submission_alvayonara/model/breakfast_model.dart';
 
 List<breakfastModel> getBreakfastData() {
   return [

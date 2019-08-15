@@ -1,4 +1,4 @@
-import 'package:flutter_submission_alvayonara/model/desertModel.dart';
+import 'package:flutter_submission_alvayonara/model/desert_model.dart';
 
 List<desertModel> getDesertData() {
   return [

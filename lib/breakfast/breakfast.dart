@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_submission_alvayonara/data/breakfastData.dart';
-import 'package:flutter_submission_alvayonara/model/breakfastModel.dart';
+import 'package:flutter_submission_alvayonara/data/breakfast_data.dart';
+import 'package:flutter_submission_alvayonara/model/breakfast_model.dart';
 
-import 'breakfastDetail.dart';
+import 'breakfast_detail.dart';
 
 class Breakfast extends StatelessWidget {
   final List<breakfastModel> breakfastList = getBreakfastData();

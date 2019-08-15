@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_submission_alvayonara/data/desertData.dart';
-import 'package:flutter_submission_alvayonara/model/desertModel.dart';
+import 'package:flutter_submission_alvayonara/data/desert_data.dart';
+import 'package:flutter_submission_alvayonara/model/desert_model.dart';
 
-import 'desertDetail.dart';
+import 'desert_detail.dart';
 
 class Desert extends StatelessWidget {
   final List<desertModel> desertList = getDesertData();
