@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'breakfast/breakfast.dart';
-import 'desert/desert.dart';
+import 'package:flutter_submission_alvayonara/view/dessert/dessert.dart';
+import 'package:flutter_submission_alvayonara/view/seafood/seafood.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,8 +23,8 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   int _indexSelected = 0;
   final _widgetOptions = [
-    Breakfast(),
-    Desert(),
+    DessertPage(),
+    SeafoodPage(),
   ];
 
   @override
@@ -42,9 +41,9 @@ class _MainState extends State<Main> {
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon: Icon(Icons.fastfood), title: Text('Breakfast')),
-          BottomNavigationBarItem(
               icon: Icon(Icons.cake), title: Text('Dessert')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.fastfood), title: Text('Seafood')),
         ],
         currentIndex: _indexSelected,
         fixedColor: Colors.cyan,

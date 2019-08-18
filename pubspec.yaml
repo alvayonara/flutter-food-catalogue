@@ -17,6 +17,7 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  http:
   flutter:
     sdk: flutter
 
@@ -39,27 +40,6 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  assets:
-    - assets/images/breakfast/1.jpg
-    - assets/images/breakfast/2.jpg
-    - assets/images/breakfast/3.jpg
-    - assets/images/breakfast/4.jpg
-    - assets/images/breakfast/5.jpg
-    - assets/images/breakfast/6.jpg
-    - assets/images/breakfast/7.jpg
-    - assets/images/breakfast/8.jpg
-    - assets/images/breakfast/9.jpg
-    - assets/images/breakfast/10.jpg
-    - assets/images/desert/1.jpg
-    - assets/images/desert/2.jpg
-    - assets/images/desert/3.jpg
-    - assets/images/desert/4.jpg
-    - assets/images/desert/5.jpg
-    - assets/images/desert/6.jpg
-    - assets/images/desert/7.jpg
-    - assets/images/desert/8.jpg
-    - assets/images/desert/9.jpg
-    - assets/images/desert/10.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
