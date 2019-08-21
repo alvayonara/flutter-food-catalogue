@@ -25,13 +25,14 @@ class _MainState extends State<Main> {
   final _widgetOptions = [
     DessertPage(),
     SeafoodPage(),
+//    FavoritPage(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Food Catalogue'),
+        title: const Text('Meal Catalogue'),
         backgroundColor: Colors.cyan,
         centerTitle: true,
       ),
@@ -44,6 +45,8 @@ class _MainState extends State<Main> {
               icon: Icon(Icons.cake), title: Text('Dessert')),
           BottomNavigationBarItem(
               icon: Icon(Icons.fastfood), title: Text('Seafood')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite), title: Text('Favorite')),
         ],
         currentIndex: _indexSelected,
         fixedColor: Colors.cyan,
